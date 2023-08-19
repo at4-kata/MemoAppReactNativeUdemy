@@ -11,6 +11,7 @@
     "rules": {
         "no-use-before-define": 0,
         "react/react-in-jsx-scope": "off",
-        "import/no-relative-packages": "off"
+        "import/no-relative-packages": "off",
+        "react/prop-types": ["error", { "ignore": ["navigation"] }]
     }
 }

@@ -13,6 +13,7 @@
         "react/react-in-jsx-scope": "off",
         "import/no-relative-packages": "off",
         "react/prop-types": ["error", { "ignore": ["navigation"] }]
+        // "react/no-unstable-nested-components": ["error", { "allowAsProps": true }]
         // "react/jsx-no-bind": ["error", { "ignore": ["allowFunctions"] }]
     }
 }

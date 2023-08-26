@@ -6,9 +6,8 @@ import {
   View, Text, StyleSheet, TextInput, TouchableOpacity, Alert,
 } from 'react-native';
 
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 import Button from '../components/Button';
-
-import { getAuth, createUserWithEmailAndPassword } from '../../node_modules/firebase/auth';
 
 export default function SignUpScreen(props) {
   const { navigation } = props;

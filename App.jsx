@@ -7,7 +7,7 @@ import {
 } from './node_modules/@react-navigation/stack';
 
 import { initializeApp } from './node_modules/firebase/app';
-import { getAuth } from './node_modules/firebase/auth';
+// import { getAuth } from './node_modules/firebase/auth';
 
 import MemoDetailScreen from './src/screens/MemoDetailScreen';
 import MemoListScreen from './src/screens/MemoListScreen';
@@ -22,16 +22,18 @@ import { firebaseConfig } from './env';
 const Stack = createStackNavigator();
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+initializeApp(firebaseConfig);
+// const app = initializeApp(firebaseConfig);
 
 // Initialize Firebase Authentication and get a reference to the service
-const auth = getAuth(app);
+// getAuth(app);
+// const auth = getAuth(app);
 
 export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="SignUp"
+        initialRouteName="LogIn"
         screenOptions={{
           headerStyle: { backgroundColor: '#467fd3' },
           headerTitleStyle: { color: '#ffffff' },

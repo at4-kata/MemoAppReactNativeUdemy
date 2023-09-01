@@ -18,8 +18,7 @@ import SignUpScreen from './src/screens/SingUpScreen';
 
 import { firebaseConfig } from './env';
 
-// const Stack = createNativeStackNavigator();
-const Stack = createStackNavigator();
+// require('firebase/firestore');
 
 // Initialize Firebase
 initializeApp(firebaseConfig);
@@ -28,6 +27,9 @@ initializeApp(firebaseConfig);
 // Initialize Firebase Authentication and get a reference to the service
 // getAuth(app);
 // const auth = getAuth(app);
+
+// const Stack = createNativeStackNavigator();
+const Stack = createStackNavigator();
 
 export default function App() {
   return (

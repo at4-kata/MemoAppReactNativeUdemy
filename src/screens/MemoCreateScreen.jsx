@@ -25,7 +25,11 @@ export default function MemoCreateScreen(props) {
         updatedAt: new Date(),
       });
       console.log('Document written with ID: %s', docRef.id);
-      navigation.goBack();
+      // navigation.goBack();
+      navigation.reset({
+        index: 0,
+        routes: [{ name: 'MemoList' }],
+      });
     } catch (e) {
       console.log('Error adding document: ', e);
     }
